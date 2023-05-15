@@ -1,0 +1,650 @@
+body {
+  margin: 0; /*fix background and remove white space*/
+  padding: 0; /* remove default padding */
+}
+
+
+
+
+
+
+.section-h1{
+    border: 40px solid rgb(202, 103, 204); /* change #000 to the color you want for your border */
+    opacity: 1; /* change the value to adjust the opacity */
+    padding: 20px;
+    border-radius: 500px;
+    animation-name: enter;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    font-weight: bold;
+  }
+  
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 0.5;
+      transform: translateY(0%);
+    }
+ 
+  }
+  
+
+
+h1 {
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.background {
+  background-image: url(pxfuel.jpg);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  animation: transition 4s infinite;
+}
+
+
+@keyframes transition {
+  0% {
+    background-image: url(pxfuel.jpg);
+  }
+  50% {
+    background-image: url(pxfuelinverse.jpg);
+  }
+  100% {
+    background-image: url(pxfuel.jpg);
+  }
+}
+
+
+
+
+
+
+header {
+  background-color: transparent;
+  height: 70px; /* height hna c'est lirtifa3 ta3 labare ta3 home ou contact...*/
+  border-radius: 100px; /*m3ntha t9was ta3 border bah yweli chbb*/
+  opacity: 0.;
+}
+
+nav {
+  display: flex;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  height: 70px; /*hna tala3 wela thabat les places des buttons*/
+}
+
+.TP { /*inroduce myself*/
+  color: rgb(255, 255, 255); /*title paragraphe color*/
+  animation-name: slideIn;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.button {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 100px; /*lwla l3ard ou deuxieme toul*/
+  border-radius: 300px;
+  background-color: #470ac2;
+  color: rgb(255, 255, 255);/*button text color*/
+  border: none;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background-color: #c43895;
+  cursor: pointer;
+}
+
+.TP2{ /*what languege i learn */
+  color: rgb(255, 255, 255); /*title paragraphe color*/
+  animation-name: slideIn;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+}
+
+
+
+.section-lang{
+
+  border: 40px solid rgb(202, 103, 204); /* change #000 to the color you want for your border */
+  opacity: 1; /* change the value to adjust the opacity */
+  padding: 20px;
+  border-radius: 1000px;
+  animation-name: enter2;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  font-weight: bold;
+}
+
+@keyframes enter2 {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 0.7;
+    transform: translateY(0%);
+  }
+
+}
+
+
+.LL{ /*html css ....*/
+  font-size: 24px;
+  font-weight: bold;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 13s forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 3;
+    transform: translateX(0);
+}
+}
+
+.FL{ /*what are the sources*/
+  font-weight: bold;
+  color: rgb(255, 255, 255); /*title paragraphe color*/
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 23s forwards;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  color: aliceblue;
+  text-align: center;
+ 
+}
+
+.block {
+  width: 300px;
+  height: 28px;
+  background-color: rgb(69, 0, 133);
+  margin: 0 10px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100px;
+  position: relative;
+  transition-duration: 0.3s;
+  animation-name: slideInLeft; /*hna tsemi annimation bah trigliha f keyframe (tsemiha)*/
+  animation-duration: 3s;
+  font-weight: bold;
+}
+
+.block a {
+  font-size: 20px;
+  color: #c058b7;
+  text-decoration: none;
+  margin-left: 2px;
+  font-weight: bold;
+
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+}
+
+.block:hover{
+  transform: scale(1.4); /*hia ki thot souris f block chhl yekbar*/
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.titlelang{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.introhtml{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.logoHTML{
+  margin: 0 auto; /* This centers the image horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transition: transform 0.5s;
+}
+.logoHTML:hover{
+  transform: scale(1.5);
+}
+
+.paraghtml{
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.introcss{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.logoCSS{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transition: transform 0.5s;
+}
+.logoCSS:hover{
+  transform: scale(1.5);
+}
+
+.paragcss{
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+
+}
+
+
+
+
+
+
+
+
+
+
+.introjs{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.logoJS{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transition: transform 0.5s;
+}
+.logoJS:hover{
+  transform: scale(1.5);
+}
+
+.paragjs{
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+
+.introjava{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.logoJAVA{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transition: transform 0.5s;
+}
+.logoJAVA:hover{
+  transform: scale(1.7);
+}
+
+.paragjava{
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+.introCPLUS{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic;
+
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.logoCPLUS{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transition: transform 0.5s;
+  }
+  .logoCPLUS:hover {
+    transform: scale(1.5);
+  }
+  
+
+.paragCPLUS{
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+}
+
+
+.titleroadmap{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  animation-name: slideIn;
+  animation-duration: 5.5s;
+  animation-fill-mode: forwards;
+  font-style: italic; 
+}
+
+
+
+
+
+
+.roadmap{
+  background-image: url(pxfuel.jpg);
+  margin: 0; /*fix background and remove white space*/
+  padding: 0; /* remove default padding */
+  height: 50%;
+  width: 50%;
+  position: relative;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+
+
+
+
+footer {
+  background-color: rgb(60, 7, 129);
+  color: rgb(87, 0, 114);
+  padding: 1px ; /*lirtifa3 ta3 footer*/
+  border-radius: 100px;
+  opacity: 0.8;
+
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 60px;
+}
+
+.links-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.links-container ul li {
+  margin-right: 100px;
+  width: 20px;
+}
+
+.links-container ul li:last-child {
+  margin-right: 0;
+}
+
+.links-container ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.footer-container > * {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-container > * {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.abdelkahar{
+  font-weight: bold;
+  font-size: 10px;
+
+}
